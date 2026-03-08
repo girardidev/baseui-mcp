@@ -4,13 +4,14 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![MCP](https://img.shields.io/badge/MCP-Protocol-00D1B2?style=for-the-badge)](https://modelcontextprotocol.io)
+[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
 **A token-friendly local MCP server for DaisyUI component documentation**
 
 *Give your AI assistant the power to build beautiful UIs with DaisyUI* 🚀
 
-[Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [Configuration](#-configuration)
+[Features](#-features) • [Installation](#-installation) • [Docker](#-docker) • [Usage](#-usage) • [Configuration](#-configuration)
 
 </div>
 
@@ -81,6 +82,45 @@ source venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
+
+---
+
+## 🐳 Docker
+
+You can also run the MCP server using Docker.
+
+### Build and run with Docker
+
+```bash
+docker build -t daisyui-mcp .
+docker run -i daisyui-mcp
+```
+
+### Using Docker Compose
+
+```bash
+docker compose up --build
+```
+
+The `docker-compose.yml` mounts the local `components/` directory as a volume, so any changes you make to component docs on the host are reflected inside the container.
+
+### Docker configuration for AI assistants
+
+<details>
+<summary><b>📁 Docker Configuration</b></summary>
+
+```json
+{
+  "servers": {
+    "daisyui": {
+      "command": "docker",
+      "args": ["run", "-i", "--rm", "daisyui-mcp"]
+    }
+  }
+}
+```
+
+</details>
 
 ---
 
@@ -173,6 +213,8 @@ fastmcp/
 ├── 🐍 mcp_server.py          # The MCP server
 ├── 🔄 update_components.py   # Script to fetch/update component docs
 ├── 📋 requirements.txt       # Dependencies (just fastmcp)
+├── 🐳 Dockerfile             # Docker image definition
+├── 🐳 docker-compose.yml     # Docker Compose configuration
 └── 📂 components/            # Markdown files for each component
     ├── button.md
     ├── card.md

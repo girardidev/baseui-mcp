@@ -1,0 +1,7 @@
+services:
+  daisyui-mcp:
+    build: .
+    container_name: daisyui-mcp-server
+    stdin_open: true
+    volumes:
+      - ./components:/app/components
