@@ -93,7 +93,7 @@ You can also run the MCP server using Docker.
 
 ```bash
 docker build -t daisyui-mcp .
-docker run -i daisyui-mcp
+docker run -i --rm daisyui-mcp
 ```
 
 ### Using Docker Compose
