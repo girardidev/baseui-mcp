@@ -1,15 +1,15 @@
 <div align="center">
 
-# 🌼 DaisyUI MCP Server
+# 🔵 BaseUI MCP Server
 
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![MCP](https://img.shields.io/badge/MCP-Protocol-00D1B2?style=for-the-badge)](https://modelcontextprotocol.io)
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
-**A token-friendly local MCP server for DaisyUI component documentation**
+**A token-friendly local MCP server for BaseUI component documentation**
 
-*Give your AI assistant the power to build beautiful UIs with DaisyUI* 🚀
+*Give your AI assistant the power to build beautiful UIs with BaseUI* 🚀
 
 [Features](#-features) • [Installation](#-installation) • [Docker](#-docker) • [Usage](#-usage) • [Configuration](#-configuration)
 
@@ -20,7 +20,7 @@
 ## ✨ Features
 
 - 🎯 **Token-Efficient** — Only exposes relevant context via MCP tools, saving precious tokens
-- 📚 **60+ Components** — Full coverage of DaisyUI's component library
+- 📚 **~37 Components** — Full coverage of BaseUI's component library
 - 🔄 **Auto-Updatable** — Fetch the latest docs anytime with one command
 - ✏️ **Customizable** — Edit or add your own component docs to fit your project
 - ⚡ **Fast & Lightweight** — Built with [FastMCP](https://github.com/jlowin/fastmcp) for optimal performance
@@ -29,14 +29,16 @@
 
 ## 🛠️ MCP Tools
 
-This server exposes two tools that AI assistants can use:
+This server exposes four tools that AI assistants can use:
 
-| Tool              | Description                                                                          |
+| Tool | Description |
 | ----------------- | ------------------------------------------------------------------------------------ |
-| `list_components` | 📋 Lists all available DaisyUI components with short descriptions                   |
-| `get_component`   | 📖 Gets the full documentation for a specific component (classes, syntax, examples) |
+| `list_components` | 📋 Lists all available BaseUI components with short descriptions |
+| `get_component` | 📖 Gets the full documentation for a specific component (classes, syntax, examples) |
+| `search_components` | 🔍 Searches components by name, description, props, or dataAttributes |
+| `get_component_api` | 📑 Gets the API reference (props and dataAttributes) for a component |
 
-> 💡 The component docs are pulled from [daisyui.com/llms.txt](https://daisyui.com/llms.txt) and stored locally as markdown files. This way you can also add your own custom components or edit existing ones to your liking or project needs.
+> 💡 The component docs are pulled from [base-ui.com/llms.txt](https://base-ui.com/llms.txt) and stored locally as markdown files. This way you can also add your own custom components or edit existing ones to your liking or project needs.
 
 ---
 
@@ -45,13 +47,19 @@ This server exposes two tools that AI assistants can use:
 Try asking your AI assistant:
 
 ```
-"What DaisyUI components are available?"
+"What BaseUI components are available?"
 ```
 ```
-"Implement a responsive card grid using DaisyUI"
+"Implement a responsive card grid using BaseUI"
 ```
 ```
-"How does the modal component work? Show me an example"
+"How does the Modal component work? Show me an example"
+```
+```
+"Show me all components that have a 'variant' prop"
+```
+```
+"What props does the Button component accept?"
 ```
 
 ---
@@ -61,8 +69,8 @@ Try asking your AI assistant:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/birdseyevue/fastmcp.git
-cd fastmcp
+git clone https://github.com/your-repo/baseui-mcp.git
+cd baseui-mcp
 ```
 
 ### 2. Create a virtual environment (recommended)
@@ -92,8 +100,8 @@ You can also run the MCP server using Docker.
 ### Build and run with Docker
 
 ```bash
-docker build -t daisyui-mcp .
-docker run -i --rm daisyui-mcp
+docker build -t baseui-mcp .
+docker run -i --rm baseui-mcp
 ```
 
 ### Using Docker Compose
@@ -112,9 +120,9 @@ The `docker-compose.yml` mounts the local `components/` directory as a volume, s
 ```json
 {
   "servers": {
-    "daisyui": {
+    "baseui": {
       "command": "docker",
-      "args": ["run", "-i", "--rm", "daisyui-mcp"]
+      "args": ["run", "-i", "--rm", "baseui-mcp"]
     }
   }
 }
@@ -134,7 +142,7 @@ Upon first run, the MCP server will not have any component docs. Fetch them by r
 python update_components.py
 ```
 
-This fetches the latest `llms.txt` from DaisyUI and generates all the markdown files in `/components`.
+This fetches the latest `llms.txt` from BaseUI and generates all the markdown files in `/components`.
 
 ### Running the server
 
@@ -144,7 +152,7 @@ python mcp_server.py
 
 ### Updating component docs
 
-If DaisyUI releases new components or updates their docs, simply run:
+If BaseUI releases new components or updates their docs, simply run:
 
 ```bash
 python update_components.py
@@ -162,7 +170,7 @@ Add the MCP server to your AI assistant's configuration:
 ```json
 {
   "servers": {
-    "daisyui": {
+    "baseui": {
       "command": "<path-to-repo>/venv/Scripts/python.exe",
       "args": ["<path-to-repo>/mcp_server.py"]
     }
@@ -178,9 +186,9 @@ Add the MCP server to your AI assistant's configuration:
 ```json
 {
   "servers": {
-    "daisyui": {
-      "command": "C:/Users/username/Downloads/fastmcp/venv/Scripts/python.exe",
-      "args": ["C:/Users/username/Downloads/fastmcp/mcp_server.py"]
+    "baseui": {
+      "command": "C:/Users/username/Downloads/baseui-mcp/venv/Scripts/python.exe",
+      "args": ["C:/Users/username/Downloads/baseui-mcp/mcp_server.py"]
     }
   }
 }
@@ -194,9 +202,9 @@ Add the MCP server to your AI assistant's configuration:
 ```json
 {
   "servers": {
-    "daisyui": {
-      "command": "/home/username/fastmcp/venv/bin/python",
-      "args": ["/home/username/fastmcp/mcp_server.py"]
+    "baseui": {
+      "command": "/home/username/baseui-mcp/venv/bin/python",
+      "args": ["/home/username/baseui-mcp/mcp_server.py"]
     }
   }
 }
@@ -209,7 +217,7 @@ Add the MCP server to your AI assistant's configuration:
 ## 📁 Project Structure
 
 ```
-fastmcp/
+baseui-mcp/
 ├── 🐍 mcp_server.py          # The MCP server
 ├── 🔄 update_components.py   # Script to fetch/update component docs
 ├── 📋 requirements.txt       # Dependencies (just fastmcp)
@@ -220,7 +228,7 @@ fastmcp/
     ├── card.md
     ├── modal.md
     ├── table.md
-    └── ... (60+ components)
+    └── ... (~37 components)
 ```
 
 ---
@@ -250,7 +258,7 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 <div align="center">
 
-Made with ❤️ for the DaisyUI community
+Made with ❤️ for the BaseUI community
 
 ⭐ Star this repo if you find it useful!
 

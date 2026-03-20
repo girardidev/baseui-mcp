@@ -1,0 +1,797 @@
+{
+  "components": {
+    "accordion": {
+      "name": "Accordion",
+      "description": "A high-quality, unstyled React accordion component that displays a set of collapsible panels with headings.",
+      "url": "https://base-ui.com/react/components/accordion.md",
+      "props": [
+        "defaultValue",
+        "value",
+        "onValueChange",
+        "hiddenUntilFound",
+        "loopFocus",
+        "multiple",
+        "disabled",
+        "orientation",
+        "className",
+        "style",
+        "keepMounted",
+        "render"
+      ],
+      "dataAttributes": [
+        "data-orientation",
+        "data-disabled"
+      ]
+    },
+    "alert-dialog": {
+      "name": "Alert Dialog",
+      "description": "A high-quality, unstyled React alert dialog component that requires a user response to proceed.",
+      "url": "https://base-ui.com/react/components/alert-dialog.md",
+      "props": [
+        "defaultOpen",
+        "open",
+        "onOpenChange",
+        "actionsRef",
+        "defaultTriggerId",
+        "handle",
+        "onOpenChangeComplete",
+        "triggerId",
+        "children"
+      ],
+      "dataAttributes": [
+        "data-popup-open",
+        "data-disabled"
+      ]
+    },
+    "autocomplete": {
+      "name": "Autocomplete",
+      "description": "A high-quality, unstyled React autocomplete component that renders an input with a list of filtered options.",
+      "url": "https://base-ui.com/react/components/autocomplete.md",
+      "props": [
+        "name",
+        "defaultValue",
+        "value",
+        "onValueChange",
+        "defaultOpen",
+        "open",
+        "onOpenChange",
+        "autoHighlight",
+        "keepHighlight",
+        "highlightItemOnHover",
+        "actionsRef",
+        "filter",
+        "filteredItems",
+        "grid",
+        "inline",
+        "itemToStringValue",
+        "items",
+        "limit",
+        "locale",
+        "loopFocus",
+        "modal",
+        "mode"
+      ],
+      "dataAttributes": [
+        "data-popup-open",
+        "data-popup-side",
+        "data-list-empty",
+        "data-pressed",
+        "data-disabled",
+        "data-readonly",
+        "data-required",
+        "data-valid",
+        "data-invalid",
+        "data-dirty",
+        "data-touched",
+        "data-filled",
+        "data-focused"
+      ]
+    },
+    "avatar": {
+      "name": "Avatar",
+      "description": "A high-quality, unstyled React avatar component that is easy to customize.",
+      "url": "https://base-ui.com/react/components/avatar.md",
+      "props": [
+        "className",
+        "style",
+        "render"
+      ],
+      "dataAttributes": [
+        "data-starting-style",
+        "data-ending-style"
+      ]
+    },
+    "button": {
+      "name": "Button",
+      "description": "A high-quality, unstyled React button component that can be rendered as another tag or focusable when disabled.",
+      "url": "https://base-ui.com/react/components/button.md",
+      "props": [
+        "focusableWhenDisabled",
+        "nativeButton",
+        "className",
+        "style",
+        "render"
+      ],
+      "dataAttributes": [
+        "data-disabled"
+      ]
+    },
+    "calendar": {
+      "name": "Calendar",
+      "description": "A high-quality, unstyled React calendar that is easy to customize.",
+      "url": "https://base-ui.com/react/components/calendar.md",
+      "props": [],
+      "dataAttributes": []
+    },
+    "checkbox": {
+      "name": "Checkbox",
+      "description": "A high-quality, unstyled React checkbox component that is easy to customize.",
+      "url": "https://base-ui.com/react/components/checkbox.md",
+      "props": [
+        "name",
+        "defaultChecked",
+        "checked",
+        "onCheckedChange",
+        "indeterminate",
+        "value",
+        "nativeButton",
+        "parent",
+        "uncheckedValue",
+        "disabled",
+        "readOnly",
+        "required",
+        "inputRef",
+        "id",
+        "className",
+        "style",
+        "render"
+      ],
+      "dataAttributes": [
+        "data-checked",
+        "data-unchecked",
+        "data-disabled",
+        "data-readonly",
+        "data-required",
+        "data-valid",
+        "data-invalid",
+        "data-dirty",
+        "data-touched",
+        "data-filled",
+        "data-focused",
+        "data-indeterminate"
+      ]
+    },
+    "checkbox-group": {
+      "name": "Checkbox Group",
+      "description": "A high-quality, unstyled React checkbox group component that provides a shared state for a series of checkboxes.",
+      "url": "https://base-ui.com/react/components/checkbox-group.md",
+      "props": [
+        "defaultValue",
+        "value",
+        "onValueChange",
+        "allValues",
+        "disabled",
+        "className",
+        "style",
+        "render"
+      ],
+      "dataAttributes": [
+        "data-disabled"
+      ]
+    },
+    "collapsible": {
+      "name": "Collapsible",
+      "description": "A high-quality, unstyled React collapsible component that displays a panel controlled by a button.",
+      "url": "https://base-ui.com/react/components/collapsible.md",
+      "props": [
+        "defaultOpen",
+        "open",
+        "onOpenChange",
+        "disabled",
+        "className",
+        "style",
+        "render"
+      ],
+      "dataAttributes": [
+        "data-panel-open"
+      ]
+    },
+    "combobox": {
+      "name": "Combobox",
+      "description": "A high-quality, unstyled React combobox component that renders an input combined with a list of predefined items to select.",
+      "url": "https://base-ui.com/react/components/combobox.md",
+      "props": [
+        "name",
+        "defaultValue",
+        "value",
+        "onValueChange",
+        "defaultInputValue",
+        "inputValue",
+        "onInputValueChange",
+        "defaultOpen",
+        "open",
+        "onOpenChange",
+        "autoHighlight",
+        "highlightItemOnHover",
+        "actionsRef",
+        "autoComplete",
+        "filter",
+        "filteredItems",
+        "grid",
+        "inline",
+        "isItemEqualToValue",
+        "itemToStringLabel",
+        "itemToStringValue",
+        "items",
+        "limit",
+        "locale",
+        "loopFocus",
+        "modal",
+        "multiple",
+        "onItemHighlighted"
+      ],
+      "dataAttributes": [
+        "data-popup-open",
+        "data-popup-side",
+        "data-list-empty",
+        "data-pressed",
+        "data-disabled",
+        "data-readonly",
+        "data-required",
+        "data-valid",
+        "data-invalid",
+        "data-dirty",
+        "data-touched",
+        "data-filled",
+        "data-focused"
+      ]
+    },
+    "context-menu": {
+      "name": "Context Menu",
+      "description": "A high-quality, unstyled React context menu component that appears at the pointer on right click or long press.",
+      "url": "https://base-ui.com/react/components/context-menu.md",
+      "props": [
+        "defaultOpen",
+        "open",
+        "onOpenChange",
+        "highlightItemOnHover",
+        "actionsRef",
+        "closeParentOnEsc",
+        "defaultTriggerId",
+        "handle",
+        "loopFocus",
+        "onOpenChangeComplete",
+        "triggerId",
+        "disabled",
+        "orientation",
+        "children"
+      ],
+      "dataAttributes": [
+        "data-popup-open",
+        "data-pressed"
+      ]
+    },
+    "dialog": {
+      "name": "Dialog",
+      "description": "A high-quality, unstyled React dialog component that opens on top of the entire page.",
+      "url": "https://base-ui.com/react/components/dialog.md",
+      "props": [
+        "defaultOpen",
+        "open",
+        "onOpenChange",
+        "actionsRef",
+        "defaultTriggerId",
+        "disablePointerDismissal",
+        "handle",
+        "modal"
+      ],
+      "dataAttributes": [
+        "data-popup-open",
+        "data-disabled"
+      ]
+    },
+    "drawer": {
+      "name": "Drawer",
+      "description": "A high-quality, unstyled React drawer component with swipe-to-dismiss gestures.",
+      "url": "https://base-ui.com/react/components/drawer.md",
+      "props": [
+        "children"
+      ],
+      "dataAttributes": [
+        "data-open",
+        "data-closed",
+        "data-disabled",
+        "data-swipe-direction",
+        "data-swiping"
+      ]
+    },
+    "field": {
+      "name": "Field",
+      "description": "A high-quality, unstyled React field component that provides labeling and validation for form controls.",
+      "url": "https://base-ui.com/react/components/field.md",
+      "props": [
+        "name",
+        "actionsRef",
+        "dirty",
+        "touched",
+        "disabled",
+        "invalid",
+        "validate",
+        "validationMode"
+      ],
+      "dataAttributes": [
+        "data-disabled",
+        "data-valid",
+        "data-invalid",
+        "data-dirty",
+        "data-touched",
+        "data-filled",
+        "data-focused"
+      ]
+    },
+    "fieldset": {
+      "name": "Fieldset",
+      "description": "A high-quality, unstyled React fieldset component with an easily stylable legend.",
+      "url": "https://base-ui.com/react/components/fieldset.md",
+      "props": [
+        "className",
+        "style",
+        "render"
+      ],
+      "dataAttributes": []
+    },
+    "form": {
+      "name": "Form",
+      "description": "A high-quality, unstyled React form component with consolidated error handling.",
+      "url": "https://base-ui.com/react/components/form.md",
+      "props": [
+        "errors",
+        "actionsRef",
+        "onFormSubmit",
+        "validationMode"
+      ],
+      "dataAttributes": []
+    },
+    "input": {
+      "name": "Input",
+      "description": "A high-quality, unstyled React input component.",
+      "url": "https://base-ui.com/react/components/input.md",
+      "props": [
+        "defaultValue",
+        "value",
+        "onValueChange",
+        "className",
+        "style",
+        "render"
+      ],
+      "dataAttributes": [
+        "data-disabled",
+        "data-valid",
+        "data-invalid",
+        "data-dirty",
+        "data-touched",
+        "data-filled",
+        "data-focused"
+      ]
+    },
+    "menu": {
+      "name": "Menu",
+      "description": "A high-quality, unstyled React menu component that displays list of actions in a dropdown, enhanced with keyboard navigation.",
+      "url": "https://base-ui.com/react/components/menu.md",
+      "props": [
+        "defaultOpen",
+        "open",
+        "onOpenChange",
+        "highlightItemOnHover",
+        "actionsRef",
+        "closeParentOnEsc",
+        "defaultTriggerId",
+        "handle",
+        "loopFocus",
+        "modal",
+        "onOpenChangeComplete",
+        "triggerId",
+        "disabled",
+        "orientation",
+        "children"
+      ],
+      "dataAttributes": [
+        "data-popup-open",
+        "data-pressed"
+      ]
+    },
+    "menubar": {
+      "name": "Menubar",
+      "description": "A menu bar providing commands and options for your application.",
+      "url": "https://base-ui.com/react/components/menubar.md",
+      "props": [
+        "loopFocus",
+        "modal",
+        "disabled",
+        "orientation",
+        "className",
+        "style",
+        "render"
+      ],
+      "dataAttributes": []
+    },
+    "meter": {
+      "name": "Meter",
+      "description": "A high-quality, unstyled React meter component that provides a graphical display of a numeric value.",
+      "url": "https://base-ui.com/react/components/meter.md",
+      "props": [
+        "value",
+        "getAriaValueText",
+        "locale",
+        "min",
+        "max",
+        "format",
+        "className",
+        "style",
+        "render"
+      ],
+      "dataAttributes": []
+    },
+    "navigation-menu": {
+      "name": "Navigation Menu",
+      "description": "A high-quality, unstyled React navigation menu component that displays a collection of links and menus for website navigation.",
+      "url": "https://base-ui.com/react/components/navigation-menu.md",
+      "props": [
+        "defaultValue",
+        "value",
+        "onValueChange",
+        "actionsRef",
+        "onOpenChangeComplete",
+        "delay",
+        "closeDelay",
+        "orientation",
+        "className",
+        "style",
+        "render"
+      ],
+      "dataAttributes": [
+        "data-popup-open",
+        "data-pressed"
+      ]
+    },
+    "number-field": {
+      "name": "Number Field",
+      "description": "A high-quality, unstyled React number field component with increment and decrement buttons, and a scrub area.",
+      "url": "https://base-ui.com/react/components/number-field.md",
+      "props": [
+        "name",
+        "defaultValue",
+        "value",
+        "onValueChange"
+      ],
+      "dataAttributes": [
+        "data-disabled",
+        "data-readonly",
+        "data-required",
+        "data-valid",
+        "data-invalid",
+        "data-dirty",
+        "data-touched",
+        "data-filled",
+        "data-focused",
+        "data-scrubbing"
+      ]
+    },
+    "popover": {
+      "name": "Popover",
+      "description": "A high-quality, unstyled React popover component that displays an accessible popup anchored to a button.",
+      "url": "https://base-ui.com/react/components/popover.md",
+      "props": [
+        "defaultOpen",
+        "open",
+        "onOpenChange",
+        "actionsRef",
+        "defaultTriggerId",
+        "handle",
+        "modal"
+      ],
+      "dataAttributes": [
+        "data-popup-open",
+        "data-pressed"
+      ]
+    },
+    "preview-card": {
+      "name": "Preview Card",
+      "description": "A high-quality, unstyled React preview card component that appears when a link is hovered, showing a preview for sighted users.",
+      "url": "https://base-ui.com/react/components/preview-card.md",
+      "props": [
+        "defaultOpen",
+        "open",
+        "onOpenChange",
+        "actionsRef",
+        "defaultTriggerId",
+        "handle",
+        "onOpenChangeComplete",
+        "triggerId",
+        "children"
+      ],
+      "dataAttributes": [
+        "data-popup-open"
+      ]
+    },
+    "progress": {
+      "name": "Progress",
+      "description": "A high-quality, unstyled React progress bar component that displays the status of a task that takes a long time.",
+      "url": "https://base-ui.com/react/components/progress.md",
+      "props": [
+        "value",
+        "getAriaValueText",
+        "locale",
+        "min",
+        "max",
+        "format",
+        "className",
+        "style",
+        "render"
+      ],
+      "dataAttributes": [
+        "data-complete",
+        "data-indeterminate",
+        "data-progressing"
+      ]
+    },
+    "radio": {
+      "name": "Radio",
+      "description": "A high-quality, unstyled React radio button component that is easy to style.",
+      "url": "https://base-ui.com/react/components/radio.md",
+      "props": [
+        "name",
+        "defaultValue",
+        "value",
+        "onValueChange",
+        "disabled",
+        "readOnly",
+        "required",
+        "inputRef",
+        "className",
+        "style",
+        "render"
+      ],
+      "dataAttributes": [
+        "data-disabled"
+      ]
+    },
+    "scroll-area": {
+      "name": "Scroll Area",
+      "description": "A high-quality, unstyled React scroll area that provides a native scroll container with custom scrollbars.",
+      "url": "https://base-ui.com/react/components/scroll-area.md",
+      "props": [
+        "overflowEdgeThreshold",
+        "className",
+        "style",
+        "render"
+      ],
+      "dataAttributes": [
+        "data-has-overflow-x",
+        "data-has-overflow-y",
+        "data-overflow-x-end",
+        "data-overflow-x-start",
+        "data-overflow-y-end",
+        "data-overflow-y-start",
+        "data-scrolling"
+      ]
+    },
+    "select": {
+      "name": "Select",
+      "description": "A high-quality, unstyled React select component for choosing a predefined value in a dropdown menu.",
+      "url": "https://base-ui.com/react/components/select.md",
+      "props": [
+        "name",
+        "defaultValue",
+        "value",
+        "onValueChange",
+        "defaultOpen",
+        "open",
+        "onOpenChange",
+        "highlightItemOnHover",
+        "actionsRef",
+        "autoComplete",
+        "isItemEqualToValue",
+        "itemToStringLabel",
+        "itemToStringValue",
+        "items",
+        "modal",
+        "multiple",
+        "onOpenChangeComplete",
+        "disabled",
+        "readOnly",
+        "required",
+        "inputRef",
+        "id",
+        "children"
+      ],
+      "dataAttributes": [
+        "data-popup-open",
+        "data-pressed",
+        "data-disabled",
+        "data-readonly",
+        "data-required",
+        "data-valid",
+        "data-invalid",
+        "data-dirty",
+        "data-touched",
+        "data-filled",
+        "data-focused",
+        "data-placeholder"
+      ]
+    },
+    "separator": {
+      "name": "Separator",
+      "description": "A high-quality, unstyled React separator component that is accessible to screen readers.",
+      "url": "https://base-ui.com/react/components/separator.md",
+      "props": [
+        "orientation",
+        "className",
+        "style",
+        "render"
+      ],
+      "dataAttributes": []
+    },
+    "slider": {
+      "name": "Slider",
+      "description": "A high-quality, unstyled React slider component that works like a range input and is easy to style.",
+      "url": "https://base-ui.com/react/components/slider.md",
+      "props": [
+        "name",
+        "defaultValue",
+        "value",
+        "onValueChange"
+      ],
+      "dataAttributes": [
+        "data-dragging",
+        "data-orientation",
+        "data-disabled",
+        "data-valid",
+        "data-invalid",
+        "data-dirty",
+        "data-touched",
+        "data-focused"
+      ]
+    },
+    "switch": {
+      "name": "Switch",
+      "description": "A high-quality, unstyled React switch component that indicates whether a setting is on or off.",
+      "url": "https://base-ui.com/react/components/switch.md",
+      "props": [
+        "name",
+        "defaultChecked",
+        "checked",
+        "onCheckedChange",
+        "value",
+        "nativeButton",
+        "uncheckedValue",
+        "disabled",
+        "readOnly",
+        "required",
+        "inputRef",
+        "id",
+        "className",
+        "style",
+        "render"
+      ],
+      "dataAttributes": [
+        "data-checked",
+        "data-unchecked",
+        "data-disabled",
+        "data-readonly",
+        "data-required",
+        "data-valid",
+        "data-invalid",
+        "data-dirty",
+        "data-touched",
+        "data-filled",
+        "data-focused"
+      ]
+    },
+    "tabs": {
+      "name": "Tabs",
+      "description": "A high-quality, unstyled React tabs component for toggling between related panels on the same page.",
+      "url": "https://base-ui.com/react/components/tabs.md",
+      "props": [
+        "defaultValue",
+        "value",
+        "onValueChange",
+        "orientation",
+        "className",
+        "style",
+        "render"
+      ],
+      "dataAttributes": [
+        "data-orientation",
+        "data-activation-direction"
+      ]
+    },
+    "toast": {
+      "name": "Toast",
+      "description": "A high-quality, unstyled React toast component to generate notifications.",
+      "url": "https://base-ui.com/react/components/toast.md",
+      "props": [
+        "limit",
+        "toastManager",
+        "timeout",
+        "children"
+      ],
+      "dataAttributes": [
+        "data-expanded"
+      ]
+    },
+    "toggle": {
+      "name": "Toggle",
+      "description": "A high-quality, unstyled React toggle component that displays a two-state button that can be on or off.",
+      "url": "https://base-ui.com/react/components/toggle.md",
+      "props": [
+        "value",
+        "defaultPressed",
+        "pressed",
+        "onPressedChange",
+        "nativeButton",
+        "disabled",
+        "className",
+        "style",
+        "render"
+      ],
+      "dataAttributes": [
+        "data-pressed"
+      ]
+    },
+    "toggle-group": {
+      "name": "Toggle Group",
+      "description": "A high-quality, unstyled React toggle group component that provides shared state to a series of toggle buttons.",
+      "url": "https://base-ui.com/react/components/toggle-group.md",
+      "props": [
+        "defaultValue",
+        "value",
+        "onValueChange",
+        "loopFocus",
+        "multiple",
+        "disabled",
+        "orientation",
+        "className",
+        "style",
+        "render"
+      ],
+      "dataAttributes": [
+        "data-orientation",
+        "data-disabled",
+        "data-multiple"
+      ]
+    },
+    "toolbar": {
+      "name": "Toolbar",
+      "description": "A high-quality, unstyled React toolbar component that groups a set of buttons and controls.",
+      "url": "https://base-ui.com/react/components/toolbar.md",
+      "props": [
+        "loopFocus",
+        "disabled",
+        "orientation",
+        "className",
+        "style",
+        "render"
+      ],
+      "dataAttributes": [
+        "data-orientation",
+        "data-disabled"
+      ]
+    },
+    "tooltip": {
+      "name": "Tooltip",
+      "description": "A high-quality, unstyled React tooltip component that appears when an element is hovered or focused, showing a hint for sighted users.",
+      "url": "https://base-ui.com/react/components/tooltip.md",
+      "props": [
+        "delay",
+        "closeDelay",
+        "timeout",
+        "children"
+      ],
+      "dataAttributes": [
+        "data-popup-open",
+        "data-trigger-disabled"
+      ]
+    }
+  }
+}
